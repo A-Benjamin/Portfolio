@@ -1,0 +1,48 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3973C3;
+    color: white;
+}
+
+.titre {
+    margin-left: 20px;
+}
+
+.lien {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lien li > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-radius: 20px;
+}
+
+.lien li > a:hover {
+    background-color: #6995D3;
+}
+
+.reseaux {
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+}
+
+.reseaux > a img {
+    width: 40px;
+    height: 40px;
+}
+
+.reseaux > a img:hover {
+    cursor: pointer;
+}
