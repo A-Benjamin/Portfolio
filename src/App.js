@@ -36,8 +36,13 @@ function App() {
       <div className='div'>
         <h1 className='parte-titre'>Présentation</h1>
         <div className='Moi'>
-          <InfoBlock btn_title='Tu souhaite me connaître ? Clique ici !' img_src={panda} texte={<Presentation />} />
-          <InfoBlock btn_title='Tu souhaite me contacter ? clique ici ! ' texte={<Contact />} />
+          <InfoBlock btn_title='Qui suis-je vraiment ?' img_src={panda} texte={<Presentation />} />
+          <InfoBlock btn_title='Restons connectés' texte={<Contact />} />
+        </div>
+
+        <div className='Moi'>
+          <InfoBlock btn_title='Ce qui me passionne' img_src={panda} texte={<Presentation />} />
+          <InfoBlock btn_title='Mes projets et rêves' texte={<Contact />} />
         </div>
       </div>
 
