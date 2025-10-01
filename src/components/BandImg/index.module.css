@@ -1,56 +1,75 @@
 .band {
-  >h4 {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #3973C3;
-    color: white;
-  }
+  width: 500px;
 }
 
-.images {
-  display: flex;
-  justify-content: space-between;
-  background-color: #6995D3;
-  padding: 20px;
-  overflow: hidden;
-
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.band > h4 {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #3973C3;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.card {
+.imageCard {
   width: 100px;
   height: 100px;
-  background: white;
+  background-color: white;
   border-radius: 20px;
-  transition: all 0.5s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   overflow: hidden;
   padding: 5px;
 }
 
-.card:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.3),
-    0 10px 15px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-.card img {
+.imageCard > img {
   width: 80%;
   height: 80%;
   object-fit: contain;
   transition: all 0.3s ease;
 }
 
-.card:hover img {
+.texteCard {
+  background-color: #6995D3;
+  border-radius: 20px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.texteCard:hover,
+.imageCard:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imageCard:hover {
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.imageCard:hover img {
   transform: scale(1.1);
+}
+
+.images {
+  background: #0f172a;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  place-items: center;
+  gap: 20px;
+  padding: 20px;
 }

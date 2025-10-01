@@ -30,25 +30,22 @@ export default function Timeline() {
     ];
 
     return (
-        <div className={styles.timelinefleches}>
-            <h2>Mon parcours scolaire</h2>
-            <div className={styles.timelinecontainer}>
-                {events.map((event, index) => (
-                    <div key={event.id} className={styles.timelineblock}>
-                        <div className={styles.blockcontent}>
-                            <div className={styles.blockdate}>{event.date}</div>
-                            <h3 className={styles.blocktitle}>{event.title}</h3>
-                            <p className={styles.blockdescription}>{event.description}</p>
-                        </div>
-
-                        {index !== events.length - 1 && (
-                            <div className={styles.flechecontainer}>
-                                <div className={styles.fleche}></div>
-                            </div>
-                        )}
+        <div className={styles.timelinecontainer}>
+            {events.map((event, index) => (
+                <div key={event.id} className={styles.timelineblock}>
+                    <div className={styles.blockcontent}>
+                        <div className={styles.blockdate}>{event.date}</div>
+                        <h3 className={styles.blocktitle}>{event.title}</h3>
+                        <p className={styles.blockdescription}>{event.description}</p>
                     </div>
-                ))}
-            </div>
+
+                    {index !== events.length - 1 && (
+                        <div className={styles.flechecontainer}>
+                            <div className={styles.fleche}></div>
+                        </div>
+                    )}
+                </div>
+            ))}
         </div>
     );
 }

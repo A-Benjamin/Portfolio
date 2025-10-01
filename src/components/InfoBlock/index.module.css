@@ -1,86 +1,73 @@
 .infoBlock {
-    margin-top: 20px;
-    width: 40%;
-    max-height: 350px;
-    color: white;
+  margin-top: 20px;
+  width: 40%;
+  max-height: 350px;
+  color: white;
 }
 
 .infoBtn,
 .infoBtnClose {
-    border: none;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #3973C3;
-    transition: border-radius 0.3s ease, box-shadow 0.3s ease;
-    color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3973C3;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-    font-weight: bolder;
-    font-size: 16px;
+.infoBtn {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+.infoBtnClose {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .infoBtn:hover,
 .infoBtnClose:hover {
-    background-color: #6995D3;
-    cursor: pointer;
-}
-
-.infoBtn {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.infoBtnClose {
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #6995D3;
 }
 
 .infoContenu {
-    display: flex;
-    height: 80%;
-    align-items: center;
-    padding: 20px;
-
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 80%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .infoImg {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 .infoTexte {
-    flex: 1;
-    margin: 0;
-    overflow-y: auto;
-    max-height: 100%;
-    scrollbar-width: thin;
-    scrollbar-color: #3973C3 transparent;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    border-radius: 15px;
-    font-weight: 500;
+  flex: 1;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #3973C3 transparent;
+  font: 500 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  border-radius: 15px;
 }
 
 .infoTexte a {
-    color: #3973C3;
-    text-decoration: underline;
+  color: #3973C3;
+  text-decoration: underline;
 }

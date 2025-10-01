@@ -41,12 +41,10 @@
 body {
   font-family: Arial, sans-serif;
   background: #0f172a;
-
   background-image:
+    radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.25) 120px, transparent 0),
     radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.4) 80px, transparent 0),
-    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.3) 100px, transparent 0),
-    radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.25) 120px, transparent 0);
-
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.3) 100px, transparent 0);
   background-size: 1000px 1000px;
   background-repeat: repeat;
 }
@@ -54,39 +52,40 @@ body {
 .Moi {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 40px 40px;
 }
 
 .div {
-  margin-top: 80px;
-
-  .parte-titre {
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 40px 0;
-  }
-
-}
-
-.titre-section {
-  margin: 5% auto;
-  padding: 80px 80px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  margin: 80px 40px 20px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+  padding-bottom: 20px;
+}
+
+.div .parte-titre {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.titre-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   max-width: 1200px;
+  margin: 5% auto;
+  padding: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
 }
 
 .titre-section > img {
@@ -112,4 +111,18 @@ body {
   color: white;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.parcours {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.technique {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
 }

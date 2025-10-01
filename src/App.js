@@ -13,6 +13,16 @@ import react from './img/langages/react.png';
 import spring from './img/langages/spring.png';
 import ts from './img/langages/ts.png';
 
+import mongo from './img/bdd/mongo.png';
+import mySql from './img/bdd/mySql.png';
+import postG from './img/bdd/postG.png';
+
+import bash from './img/outils/bash.png';
+import gitlab from './img/outils/gitlab.png';
+import github from './img/github.png';
+import jira from './img/outils/jira.png';
+import teams from './img/outils/teams.png';
+
 import fusee from './img/gif/fusee.gif';
 import pc from './img/gif/pc.gif';
 
@@ -47,13 +57,34 @@ function App() {
       </div>
 
       <div className='div'>
-        <h1 className='parte-titre'>Mes compétences technique</h1>
-        <BandImg title='Mes langages de programmation préféré' liste_img={[py, django, java, spring, js, ts, react]} />
+        <h1 className='parte-titre'>Mon parcours scolaire</h1>
+        <div className='parcours'>
+          <Timeline />
+          <InfoBlock btn_title='Mon job étudiant' texte={<Contact />} />
+        </div>
       </div>
 
       <div className='div'>
-        <Timeline />
+        <h1 className='parte-titre'>Mes compétences technique</h1>
+        <div className='technique'>
+          <BandImg title='Mes langages de programmation' image={true} liste_img={[py, java, js, ts]} />
+          <BandImg title='Mes Frameworks' image={true} liste_img={[django, spring, react]} />
+          <BandImg title='Mes bases de données' image={true} liste_img={[mongo, postG, mySql]} />
+        </div>
+        <div className='technique'>
+          <BandImg title='Mes outils' image={true} liste_img={[gitlab, github, jira, teams, bash]} />
+          <BandImg title='Mes outils' liste_img={["Agilité", "Test Driven Development", "Clean code"]} />
+        </div>
       </div>
+
+      <div className='div'>
+        <h1 className='parte-titre'>Mes projets universitaire</h1>
+      </div>
+
+      <div className='div'>
+        <h1 className='parte-titre'>Mes projets de stages</h1>
+      </div>
+
     </div>
   );
 }
