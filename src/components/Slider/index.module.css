@@ -1,0 +1,32 @@
+.sliderContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #0f172a;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.slide {
+    width: 400px;
+    margin: 0 auto;
+    background: #6995D3;
+    border-radius: 20px;
+
+    >.title {
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    >.test {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+
+        >img {
+            border-radius: 20px;
+        }
+    }
+}

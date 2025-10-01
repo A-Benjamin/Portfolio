@@ -29,7 +29,46 @@ import pc from './img/gif/pc.gif';
 import BandImg from './components/BandImg';
 import Timeline from './components/Timeline';
 
+import Slider from './components/Slider';
+
+import test from './img/test.jpg';
+
 function App() {
+
+  let cards = [{
+    title: "Jeu de labyrinthe",
+    date: "Jan. 2022  Mai. 2022",
+    img: test,
+  }, {
+    title: "Compétition en java",
+    date: "Sept. 2022  Déc. 2022",
+    img: test,
+  }, {
+    title: "Entreprise de vente de jouets",
+    date: "Sept. 2023  Dec. 2023",
+    img: test
+  }, {
+    title: "Bomberman",
+    date: "Nov. 2023  Janv. 2024",
+    img: test
+  }, {
+    title: "Application d'assurance",
+    date: "Sept. 2024  Mars. 2025",
+    img: test
+  }
+  ];
+
+  let stageCards = [{
+    title: "Stage développeur web",
+    date: "Avr. 2023  Juil. 2023",
+    img: test,
+  }, {
+    title: "Stage développeur web",
+    date: "Avr. 2025  Sept. 2025",
+    img: test,
+  }
+  ];
+
   return (
     <div className="App">
       <NavBar />
@@ -79,10 +118,12 @@ function App() {
 
       <div className='div'>
         <h1 className='parte-titre'>Mes projets universitaire</h1>
+        <Slider liste_card={cards} />
       </div>
 
       <div className='div'>
         <h1 className='parte-titre'>Mes projets de stages</h1>
+        <Slider liste_card={stageCards} />
       </div>
 
     </div>
