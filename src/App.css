@@ -54,10 +54,59 @@ body {
 .Moi {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
 }
 
-.langages {
+.div {
   margin-top: 80px;
-  margin-bottom: 80px;
+
+  .parte-titre {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px 0;
+  }
+
+}
+
+.titre-section {
+  margin: 5% auto;
+  padding: 80px 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+  max-width: 1200px;
+}
+
+.titre-section > img {
+  width: 200px;
+  height: 200px;
+}
+
+.titre-desc {
+  flex: 1;
+  color: white;
+  padding: 0 20px;
+}
+
+.titre-desc h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.titre-desc p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
 }
