@@ -24,7 +24,7 @@ export default function Slider(props: SliderProps) {
                 emulateTouch={true}
             >
                 {props.liste_card.map((e) =>
-                    <div className={styles.slide} key={e.title}>
+                    <div className={styles.slide} key={e.title} onClick={() => console.log(e)}>
                         <div className={styles.title}>
                             <h2>{e.title}</h2>
                             <p>{e.date}</p>

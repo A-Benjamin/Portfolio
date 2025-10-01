@@ -13,6 +13,8 @@
     margin: 0 auto;
     background: #6995D3;
     border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 
     >.title {
         margin: 0 auto;
@@ -23,10 +25,21 @@
     >.test {
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
+        max-height: 250px;
 
         >img {
+            height: 220px;
             border-radius: 20px;
+            object-fit: contain;
         }
     }
+}
+
+.slide:hover {
+    cursor: pointer;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3),
+        0 10px 15px rgba(0, 0, 0, 0.2);
 }

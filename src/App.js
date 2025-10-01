@@ -33,39 +33,48 @@ import Slider from './components/Slider';
 
 import test from './img/test.jpg';
 
+import assurance from './img/projets/assurance.png';
+import bombe from './img/projets/bombe.png';
+import compet from './img/projets/compet.png';
+import jouet from './img/projets/jouet.png';
+import laby from './img/projets/laby.png';
+
+import IAE from './img/stages/IAE.png';
+import sopra from './img/stages/sopra.png';
+
 function App() {
 
   let cards = [{
     title: "Jeu de labyrinthe",
     date: "Jan. 2022  Mai. 2022",
-    img: test,
+    img: laby,
   }, {
     title: "Compétition en java",
     date: "Sept. 2022  Déc. 2022",
-    img: test,
+    img: compet,
   }, {
     title: "Entreprise de vente de jouets",
     date: "Sept. 2023  Dec. 2023",
-    img: test
+    img: jouet
   }, {
     title: "Bomberman",
     date: "Nov. 2023  Janv. 2024",
-    img: test
+    img: bombe
   }, {
     title: "Application d'assurance",
     date: "Sept. 2024  Mars. 2025",
-    img: test
+    img: assurance
   }
   ];
 
   let stageCards = [{
     title: "Stage développeur web",
     date: "Avr. 2023  Juil. 2023",
-    img: test,
+    img: IAE,
   }, {
     title: "Stage développeur web",
     date: "Avr. 2025  Sept. 2025",
-    img: test,
+    img: sopra,
   }
   ];
 
