@@ -1,0 +1,142 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 24px;
+    color: black;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeButton:hover {
+    background-color: transparent;
+}
+
+.modalContent {
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3973C3 transparent;
+}
+
+.modalContent::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+    background-color: #3973C3;
+    border-radius: 3px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.titre {
+    background-color: #3973C3;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.titre h2 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.titre img {
+    height: 220px;
+    border-radius: 20px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.projetContent {
+    padding: 1rem;
+    min-height: auto;
+}
+
+/* Version tablette */
+@media (min-width: 480px) and (max-width: 770px) {
+    .modal {
+        width: 95%;
+        height: 95%;
+    }
+    
+    .titre h2 {
+        font-size: 1.5rem;
+    }
+    
+    .titre img {
+        height: 200px;
+    }
+}
+
+/* Version mobile */
+@media (max-width: 480px) {
+    .modal {
+        width: 98%;
+        height: 98%;
+        border-radius: 20px;
+    }
+    
+    .titre {
+        padding: 0.75rem;
+    }
+    
+    .titre h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .titre img {
+        height: 150px;
+    }
+    
+    .projetContent {
+        padding: 0.75rem;
+    }
+}
+
+/* Version mobile petit écran */
+@media (max-width: 360px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    .titre {
+        padding: 0.5rem;
+    }
+    
+    .titre h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .titre img {
+        height: 120px;
+        border-radius: 15px;
+    }
+    
+    .projetContent {
+        padding: 0.5rem;
+    }
+}

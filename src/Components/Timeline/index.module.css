@@ -1,0 +1,138 @@
+.timelineblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: max-content;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timelinecontainer {
+  padding: clamp(1rem, 2vw, 1.25rem) 0;
+  border-radius: 20px;
+  background: #0f172a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.blockcontent {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin: clamp(0.5rem, 1vw, 0.625rem) 0;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  background-color: white;
+  border: 2px solid #3973C3;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.blockcontent > :nth-child(3) {
+  width: 100%;
+  max-width: 500px;
+}
+
+.blockcontent:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.flechecontainer {
+  height: clamp(1.5rem, 3vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fleche {
+  width: 0;
+  height: 0;
+  border-left: clamp(0.5rem, 1vw, 0.75rem) solid transparent;
+  border-right: clamp(0.5rem, 1vw, 0.75rem) solid transparent;
+  border-top: clamp(0.75rem, 1.5vw, 1.25rem) solid #3973C3;
+}
+
+.blockdate {
+  margin-bottom: clamp(0.5rem, 1vw, 0.625rem);
+  color: #3973C3;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  text-align: center;
+}
+
+.blocktitle {
+  margin: 0 0 clamp(0.5rem, 1vw, 0.625rem);
+  color: black;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Version tablette */
+@media (min-width: 480px) and (max-width: 770px) {
+  .blockcontent {
+    width: 95%;
+    padding: 0.875rem;
+  }
+  
+  .blockcontent > :nth-child(3) {
+    width: 100%;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 480px) {
+  .timelinecontainer {
+    padding: 0.75rem 0;
+    border-radius: 15px;
+  }
+  
+  .blockcontent {
+    width: 98%;
+    margin: 0.375rem 0;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+  
+  .blockdate {
+    font-size: 0.85rem;
+  }
+  
+  .blocktitle {
+    font-size: 0.95rem;
+  }
+  
+  .flechecontainer {
+    height: 1.25rem;
+  }
+}
+
+/* Version petit mobile */
+@media (max-width: 360px) {
+  .timelinecontainer {
+    padding: 0.5rem 0;
+  }
+  
+  .blockcontent {
+    padding: 0.625rem;
+    margin: 0.25rem 0;
+  }
+  
+  .blockdate {
+    font-size: 0.8rem;
+  }
+  
+  .blocktitle {
+    font-size: 0.9rem;
+  }
+}

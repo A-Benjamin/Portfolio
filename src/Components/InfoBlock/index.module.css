@@ -1,0 +1,170 @@
+.infoTexte li {
+    text-align: left !important;
+}
+
+.infoBlock {
+  margin: 1.5rem auto 0;
+  width: 90%;
+  max-width: 600px;
+  color: white;
+}
+
+.infoBtn,
+.infoBtnClose {
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #3973C3;
+  color: white;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.infoBtn {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  box-shadow: 0 -0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+}
+
+.infoBtnClose {
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+}
+
+.infoBtn:hover,
+.infoBtnClose:hover {
+  background-color: #6995D3;
+  transform: translateY(-1px);
+}
+
+.infoBtn:active,
+.infoBtnClose:active {
+  transform: translateY(0);
+}
+
+.infoContenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: #0f172a;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.infoImg {
+  width: 100%;
+  max-width: 9.375rem;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.infoTexte {
+  flex: 1;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #3973C3 transparent;
+  font: 500 clamp(0.875rem, 2vw, 1rem) 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  border-radius: 0.9375rem;
+  padding: 0.5rem;
+}
+
+.infoTexte::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+.infoTexte::-webkit-scrollbar-thumb {
+  background-color: #3973C3;
+  border-radius: 0.1875rem;
+}
+
+.infoTexte::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.infoTexte a {
+  color: #3973C3;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.infoTexte a:hover {
+  color: #6995D3;
+}
+
+/* Version desktop */
+@media (min-width: 770px) {
+  .infoBlock {
+    width: 85%;
+    max-width: 800px;
+  }
+  
+  .infoContenu {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .infoImg {
+    margin: 0;
+    max-width: 9.375rem;
+  }
+}
+
+/* Version tablette */
+@media (min-width: 480px) and (max-width: 770px) {
+  .infoBlock {
+    width: 88%;
+  }
+  
+  .infoContenu {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .infoImg {
+    max-width: 8rem;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 480px) {
+  .infoBlock {
+    width: 92%;
+    margin-top: 1rem;
+  }
+  
+  .infoBtn,
+  .infoBtnClose {
+    padding: 0.875rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .infoContenu {
+    padding: 0.875rem;
+    gap: 0.875rem;
+  }
+  
+  .infoImg {
+    max-width: 7rem;
+  }
+  
+  .infoTexte {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

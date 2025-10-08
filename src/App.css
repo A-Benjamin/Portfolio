@@ -1,0 +1,198 @@
+:root {
+  --primary-bg: #0f172a;
+  --secondary-bg: rgba(255, 255, 255, 0.15);
+  --text-color: white;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --border-radius: 1.25rem;
+  --shadow: 0 0 2.5rem rgba(255, 255, 255, 0.05);
+  --max-width: 75rem;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--primary-bg);
+  background-image:
+    radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.25) 7.5rem, transparent 0),
+    radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.4) 5rem, transparent 0),
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.3) 6.25rem, transparent 0);
+  background-size: 62.5rem 62.5rem;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.titre-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  max-width: var(--max-width);
+  margin: 5% auto;
+  padding: clamp(1.5rem, 5vw, 5rem);
+  background: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.titre-section > img {
+  width: clamp(6.25rem, 20vw, 12.5rem);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.titre-desc {
+  flex: 1;
+  color: var(--text-color);
+  padding: 0 var(--spacing-sm);
+}
+
+.titre-desc h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.titre-desc p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 37.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.block {
+  margin: clamp(2rem, 5vw, 5rem) var(--spacing-sm) var(--spacing-sm);
+  background: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding-bottom: var(--spacing-sm);
+}
+
+.block .parte-titre {
+  color: var(--text-color);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  padding: var(--spacing-md);
+  border-radius: 0.625rem;
+  margin: clamp(1rem, 3vw, 2.5rem) 0;
+  line-height: 1.3;
+}
+
+.alignItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin: 0 var(--spacing-sm) var(--spacing-lg);
+}
+
+.parcours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: 0 var(--spacing-sm);
+}
+
+.technique {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  padding: 0 var(--spacing-sm);
+}
+
+/* Version desktop */
+@media (min-width: 770px) {
+  .titre-section {
+    flex-direction: row;
+    text-align: left;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .alignItem {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 var(--spacing-lg) var(--spacing-lg);
+  }
+
+  .parcours {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .technique {
+    flex-direction: row;
+    justify-content: center;
+    gap: clamp(1.5rem, 3vw, 3.125rem);
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+/* Version tablette */
+@media (min-width: 480px) and (max-width: 770px) {
+  .titre-section {
+    padding: var(--spacing-xl);
+  }
+
+  .block {
+    margin: var(--spacing-xl) var(--spacing-md) var(--spacing-sm);
+  }
+
+  .alignItem {
+    margin: 0 var(--spacing-md) var(--spacing-lg);
+  }
+
+  .parcours {
+    padding: 0 var(--spacing-md);
+  }
+
+  .technique {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+/* Version mobile petit écran */
+@media (max-width: 360px) {
+  .titre-section {
+    padding: var(--spacing-lg);
+    margin: 10% auto;
+  }
+
+  .block {
+    margin: var(--spacing-lg) var(--spacing-xs) var(--spacing-xs);
+    border-radius: 1rem;
+  }
+
+  .block .parte-titre {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    font-size: 1.25rem;
+  }
+
+  .alignItem,
+  .parcours,
+  .technique {
+    margin-left: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
+  }
+}
