@@ -8,10 +8,9 @@ export const Projet = () => (
         </p>
 
         <p>
-            🔥 Même si je n’ai pas encore beaucoup d’expérience, je suis{" "}
-            <strong>motivé</strong> et j’ai une réelle envie d’apprendre au sein d’une
-            entreprise et d’une équipe qui me donneront la chance de montrer mon
-            savoir-faire et de progresser ensemble 🚀.
+            Je suis{" "} <strong>motivé</strong> et j’ai une réelle envie d’apprendre au sein 
+            d’une entreprise et d’une équipe qui me donneront la chance de montrer mon savoir-faire 
+            afin de progresser ensemble 🚀.
         </p>
     </div>
 );

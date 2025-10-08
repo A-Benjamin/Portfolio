@@ -11,7 +11,7 @@ export default function Timeline() {
                     <div className={styles.blockcontent}>
                         <div className={styles.blockdate}>{event.date}</div>
                         <h3 className={styles.blocktitle}>{event.title}</h3>
-                        <InfoBlock btn_title={'Plus de détailles :'} texte={event.page} />
+                        <InfoBlock btn_title={'Plus de détails :'} texte={event.page} />
                     </div>
 
                     {index !== TimeLineData.length - 1 && (

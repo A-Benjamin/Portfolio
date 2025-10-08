@@ -2,7 +2,7 @@ export const Presentation = () => (
   <div className="presentation">
     <h3>👋 Hello World 👋</h3>
     <p>
-      Moi, c’est <strong>Alexandre Benjamin</strong>, développeur <strong>Full Stack</strong> diplômé d’un
+      Moi, c’est <strong>Benjamin ALEXANDRE</strong>, développeur <strong>Full Stack</strong> diplômé d’un
       <strong> Master MIAGE</strong> à l’Université de Lille, et surtout <strong>passionné de développement web</strong> 💻.
     </p>
     <p>

@@ -60,7 +60,7 @@ export function Vente() {
                     />
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Choix à éffectuer chaque année"
+                        btn_title="Choix à effectuer chaque année"
                         texte={<>
                             <p>
                                 Chaque année, nous devions prendre des décisions stratégiques pour développer l’entreprise :
@@ -78,7 +78,7 @@ export function Vente() {
                 <div className={styles.BlockContent}>
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Les différents calcule"
+                        btn_title="Les différents calculs"
                         texte={<>
                             <p>
                                 Nous avons réalisé différents calculs pour évaluer la viabilité de nos décisions :

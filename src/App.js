@@ -52,7 +52,7 @@ function App() {
       </div>
 
       <div className='block'>
-        <h1 id='technique' className='parte-titre'>Mes compétences technique</h1>
+        <h1 id='technique' className='parte-titre'>Mes compétences techniques</h1>
         <div className='technique'>
           <BandImg title='Mes langages de programmation' image={true} liste_img={[py, java, js, ts, pharo]} />
           <BandImg title='Mes Frameworks & Bibliothèques' image={true} liste_img={[django, spring, react, Mui]} />
@@ -60,12 +60,12 @@ function App() {
         </div>
         <div className='technique'>
           <BandImg title='Mes outils' image={true} liste_img={[gitlab, github, jira, teams, bash, excel, figma]} />
-          <BandImg title='Autres compétences' liste_img={["Agilité", "Test Driven Development", "Clean code", "Design patterns", "UML", "architecture SI", "Accessibilité", "Sécurité"]} />
+          <BandImg title='Autres compétences' liste_img={["Agilité", "Test Driven Development", "Clean code", "Design patterns", "UML", "Architecture SI", "Accessibilité", "Sécurité"]} />
         </div>
       </div>
 
       <div className='block'>
-        <h1 id='universitaire' className='parte-titre'>Mes projets universitaire</h1>
+        <h1 id='universitaire' className='parte-titre'>Mes projets universitaires</h1>
         <Slider type="univ" />
       </div>
 

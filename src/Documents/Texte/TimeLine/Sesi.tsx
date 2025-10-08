@@ -3,7 +3,7 @@ export const Sesi = () => (
         <h3>🧪 Licence SESI – Université de Lille</h3>
 
         <p>
-            Lors de ma première année à l’Université de Lille, j’ai intégré la licence
+            Lors de ma première année à l’Université de Lille, j’ai intégré la Licence
             <strong> SESI</strong> (Sciences Exactes et Sciences de l’Ingénierie).
         </p>
 

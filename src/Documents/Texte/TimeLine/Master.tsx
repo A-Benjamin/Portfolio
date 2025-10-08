@@ -13,7 +13,7 @@ export const Master = () => (
             <li>🌍 Anglais</li>
             <li>🗣️ Communication</li>
             <li>🧮 Bases de données (SQL & NoSQL)</li>
-            <li>🖧 Infrastructure</li>
+            <li>🚧 Infrastructure</li>
             <li>📈 Conduite de projet</li>
             <li>🏢 Stratégie d’entreprise</li>
             <li>⚙️ Projet Agile</li>

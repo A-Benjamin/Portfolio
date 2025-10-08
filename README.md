@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Bienvenue sur le github de mon Portfolio !
+ 
+## Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La création de ce portfolio a pour objectif de me présenter, proposer une version améliorée de mon CV tout en vous permettant de vous présenter mes compétences et développement web.
 
-## Available Scripts
+Mon portfolio est disponible à l'adresse suivante  : https://a-benjamin.github.io/Portfolio/
 
-In the project directory, you can run:
+## Les différentes parties
 
-### `npm start`
+Mon portfolio est décomposé en plusieurs parties : 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* La partie `Présentation` qui permet d'en apprendre sur moi (description simple et rapide, passion et objectifs) et de me contacter.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* La partie `Mon parcours scolaire` qui permet de décrire tout mon parcours scolaire et mon job étudiant avec à chaque fois une description détailler de ce que j'ai appris.
 
-### `npm test`
+* La partie `Mes compétences techniques` qui permet de lister toutes mes compétences (langages, frameworks, BDD, outils et autres).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* La partie `Mes projets universitaires` qui permet de découvrir certains de mes projets que j'ai réalisé lors de mon parcours universitaire.
 
-### `npm run build`
+* La partie `Mes projets de stages` qui permet de découvrir les projets sur lesquels j'ai travaillé durant mes stages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Comment j'ai réaliser ce portfolio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Pour la réalisation de ce portfolio, j'ai décidé d'utiliser le langage TypeScript et le framework React afin de mettre en pratique mes compétences sur ce langage, et ce, framework.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mon code se situe dans le dossier src et est décomposé en plusieurs partie : 
 
-### `npm run eject`
+### Le dossier `Composant`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ce dossier contient les différents composants que j'ai mis en place et qui sont utilisés dans l'application : 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `BandImg` : Il permet d'afficher une boîte avec un titre et en dessous soit des images ou alors des petits blocs textes. Il est utilisé pour présenter mes langages par exemple.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* `InfoBlock` : Il permet d'afficher une boîte avec un titre et en dessous du texte mis en place sous forme HTML.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* `NavBar` : Ce composant est la barre de navigation, il permet de naviguer rapidement dans le portfolio.
 
-## Learn More
+* `ProjetModal` : Ce composant est un modal que j'utilise pour la présentation de mes différents projets universitaire et mes projets de stage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* `Timeline` : Ce composant permet d'afficher des blocs les uns à la suite des autres suivies d'une flèche, il me permet d'afficher mon parcours scolaire.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Le dossier `Data`
 
-### Code Splitting
+Ce dossier permet de regrouper toutes les données utilisées dans l'application, nous avons par exemple les données de mes stages, de mes projets et de mon parcours scolaire.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Le dossier `Document`
 
-### Analyzing the Bundle Size
+Il contient différents dossiers :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Le dossier `PDF` : Il contient pour le moment mon CV
+* Le dossier `Projet` : Il contient des fichiers `.tsx` qui retourne le code HTML de mes projets universitaires et de stages.
+* Le dossier  `Texte` : Il contient des fichiers `.tsx` qui retourne les différents textes présente dans les différents blocs de mon portfolio.
 
-### Making a Progressive Web App
+### Le dossier `img`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Il contient toutes les images utilisées dans le portfolio, un fichier `index.tsx` permet de les importer facilement dans d'autres fichiers en une seule ligne.
 
-### Advanced Configuration
+### Le dossier `Type`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Permet de mettre en place des types afin de m'assurer que les données soient bien mises en place.
 
-### Deployment
+## Contacter moi !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Pour toute question, je serais ravi d'échanger avec vous.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+N'hésitez pas à me contacter.

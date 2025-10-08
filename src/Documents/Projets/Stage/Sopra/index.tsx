@@ -41,7 +41,7 @@ export function Sopra() {
             </div>
 
             <div className={styles.Realisation}>
-                <h2>Les réalistions</h2>
+                <h2>Les réalisations</h2>
                 <div className={styles.BlockContent}>
                     <InfoBlock
                         cliquable={false}
@@ -60,7 +60,7 @@ export function Sopra() {
                     />
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Mise en place de certains composant"
+                        btn_title="Mise en place de certains composants"
                         texte={<>
                             <p>J’ai développé plusieurs composants réutilisables pour le front-end :</p>
                             <ul>
@@ -77,7 +77,7 @@ export function Sopra() {
                 <div className={styles.BlockContent}>
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Mise en place de certaines page"
+                        btn_title="Mise en place de certaines pages"
                         texte={<>
                             <p>J’ai également conçu et intégré plusieurs pages de l’application :</p>
                             <ul>

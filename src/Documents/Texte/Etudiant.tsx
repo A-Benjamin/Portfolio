@@ -23,7 +23,7 @@ export const Etudiant = () => (
 
         <p>
             Le <strong>samedi</strong>, je travaillais en équipe, tandis que le <strong>dimanche</strong>,
-            j’étais seul responsable du rayon.
+            j'étais seul en ayant la responsabilité du rayon.
         </p>
 
         <p>Cette expérience m’a permis de développer des compétences transférables à mon métier de développeur :</p>

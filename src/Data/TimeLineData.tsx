@@ -14,12 +14,12 @@ export const TimeLineData: TimeLine[] = [
     },
     {
         date: "Sept. 2021 - Août 2023",
-        title: "Licence informatique",
+        title: "Licence Informatique",
         page: Licence(),
     },
     {
         date: "Sept. 2023 - Sept. 2025",
-        title: "Master MIAGE (Méthodes informatiques appliquées à la gestion des entreprises)",
+        title: "Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
         page: Master(),
     },
 ];

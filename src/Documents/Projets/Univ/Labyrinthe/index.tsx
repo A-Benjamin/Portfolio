@@ -53,7 +53,7 @@ export function Labyrinthe() {
                                 <li>L’<strong>algorithme de Prim</strong></li>
                             </ul>
                             <p>
-                                Ces méthodes garantissent la création de labyrinthes sans cycles, assurant un seul chemin entre deux points.
+                                Ces méthodes garantissent la création de labyrinthes sans cycle, assurant un seul chemin entre deux points.
                             </p>
                         </>
                         }
@@ -119,7 +119,7 @@ export function Labyrinthe() {
                     />
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Les intéractions"
+                        btn_title="Les interactions"
                         texte={<>
                             <p>Nous avons mis en place plusieurs interactions avec le terminal Linux pour rendre le jeu jouable :</p>
                             <ul>

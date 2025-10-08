@@ -80,7 +80,7 @@ export function Bomber() {
                 <div className={styles.BlockContent}>
                     <InfoBlock
                         cliquable={false}
-                        btn_title="Les intéractions"
+                        btn_title="Les interactions"
                         texte={<>
                             <p>Le jeu est entièrement jouable dans l’environnement Pharo. Voici les principales interactions :</p>
                             <ul>
